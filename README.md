@@ -23,8 +23,21 @@ The goal is to demonstrate skills in **Power BI, SQL, and data modeling** applie
 ---
 
 ## 📂 Data Structure
-- **Fact tables**: `fact_sales`, `fact_customers`, `fact_products`  
-- **Dimension tables**: `dim_date`, `dim_region`, `dim_channel`, `dim_category`  
+- **Fact tables**: `fact_sales`  
+- **Dimension tables**: `dim_date`, `dim_customer`, `dim_product`
+- **Calculated Tables (support)**:`CohortMonth`,`CohortIndex`,
+- **Measure tables (no data rows)**: `Measurements_Basics`,`Measurements_KPI`,`Measurements_Customer`,`Measurements_Cohort`,
+
+---
+
+## Model relationships (chaves)
+
+- **fact_sales[date_key] → dim_date[date_key]
+- **fact_sales[customer_id] → dim_customer[customer_id]
+- **fact_sales[product_id] → dim_product[product_id]
+- **CohortMonth[customer_id] → dim_customer[customer_id] (suporte a coortes)
+- **CohortIndex[cohort_month] ↔ usado apenas em medidas/visual de coorte
+
 
 ---
 
@@ -41,7 +54,7 @@ The goal is to demonstrate skills in **Power BI, SQL, and data modeling** applie
 ---
 
 ## 📥 File
-- [Download Dashboard PDF](NovaEra_Rentail_Demo.pdf)
+- [Download Dashboard PDF](./NovaEra_Retail_Demo.pdf)
 
 ---
 
