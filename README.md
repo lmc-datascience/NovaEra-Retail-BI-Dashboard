@@ -53,7 +53,7 @@ The goal is to demonstrate skills in **Power BI, SQL, and data modeling** applie
 ---
 
 ## 📥 File
-- [Download Dashboard PDF](./NovaEra_Retail_Demo.pdf)
+- [Download Dashboard PDF](./NovaEra-Retail-BI-Dashboard.pdf)
 
 ---
 
